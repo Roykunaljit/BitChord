@@ -25,7 +25,7 @@ import com.music.bitchord.data.model.withCorrectedType
 object SearchHistory {
 
     /** Deep enough to be useful, shallow enough that the list stays scannable. */
-    private const val MAX_ENTRIES = 20
+    private const val MAX_ENTRIES = 1_000_000
 
     private lateinit var prefs: SharedPreferences
     private val json = Json
