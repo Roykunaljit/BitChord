@@ -1159,7 +1159,7 @@ private fun BitChordApp(
             val party = ListenTogether.state.value
             if (party.controlsLocked && !party.playback.isPlaying && !c.isPlaying) {
                 showHostOnlyNotice()
-            } else if (c.isPlaying) {
+            } else if (c.playWhenReady) {
                 c.pause()
             } else {
                 c.play()
